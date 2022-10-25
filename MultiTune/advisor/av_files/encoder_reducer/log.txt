@@ -1,0 +1,666 @@
+2m 10s (- 0m 0s) (30 100%) trainLoss: 0.3786, valiLoss: 0.2922
+2m 3s (- 0m 0s) (30 100%) trainLoss: 0.4722, valiLoss: 0.3961
+2m 3s (- 0m 0s) (30 100%) trainLoss: 0.3595, valiLoss: 0.2843
+2m 10s (- 0m 0s) (30 100%) trainLoss: 0.3096, valiLoss: 0.3577
+budget used up while doing trainIters()
+budget used up while doing do_continuously()
+evaluate vali set
+> q = 12a, mv = mv20
+= q_time = 546.4815000000001, mv_time = 178.612, q_mv_time = 939.2750000000004
+< q_time = 329.96704579177185, q_mv_time = 1121.2838254954959
+> q = 29a, mv = mv13
+= q_time = 1671.0685000000003, mv_time = 2868.45, q_mv_time = 51.64450000000001
+< q_time = 664.5112372859301, q_mv_time = 1111.2951581587674
+> q = 17b, mv = mv3
+= q_time = 14879.250499999995, mv_time = 115.611, q_mv_time = 6376.166500000004
+< q_time = 1144.1446609068034, q_mv_time = 5971.223433405765
+> q = 6e, mv = mv4
+= q_time = 33.9525, mv_time = 2030.839, q_mv_time = 456.0544999999999
+< q_time = 669.3919969989644, q_mv_time = 583.4740290225998
+> q = 7b, mv = mv11
+= q_time = 395.3195000000001, mv_time = 14201.748, q_mv_time = 127.34899999999998
+< q_time = 181.79522593360363, q_mv_time = 758.5808656116029
+> q = 9b, mv = mv14
+= q_time = 778.0355, mv_time = 3900.358, q_mv_time = 633.0235000000001
+< q_time = 6412.241537095228, q_mv_time = 2559.6008629014927
+> q = 9b, mv = mv13
+= q_time = 778.0355, mv_time = 2868.45, q_mv_time = 5571.103000000002
+< q_time = 6412.241537095228, q_mv_time = 26420.67418726859
+> q = 22a, mv = mv8
+= q_time = 975.311, mv_time = 3466.863, q_mv_time = 2891.5440000000012
+< q_time = 1016.1628040568144, q_mv_time = 1967.2721377366624
+> q = 15b, mv = mv26
+= q_time = 48.9645, mv_time = 18331.651, q_mv_time = 3759.7445000000016
+< q_time = 408.9395173193486, q_mv_time = 1210.7413294608912
+> q = 5c, mv = mv8
+= q_time = 522.6405000000001, mv_time = 3466.863, q_mv_time = 488.32749999999993
+< q_time = 220.58936518234762, q_mv_time = 383.3397221353758
+> q = 14a, mv = mv25
+= q_time = 633.1115000000001, mv_time = 226.662, q_mv_time = 543.4030000000002
+< q_time = 1287.2352074716102, q_mv_time = 850.0761422570101
+> q = 16b, mv = mv3
+= q_time = 29216.025000000027, mv_time = 115.611, q_mv_time = 12331.279
+< q_time = 445.02492993979354, q_mv_time = 195.52620869654766
+> q = 18b, mv = mv29
+= q_time = 502.20600000000024, mv_time = 3962.874, q_mv_time = 342.204
+< q_time = 735.3302283672817, q_mv_time = 1960.0485896763505
+> q = 2c, mv = mv6
+= q_time = 605.8654999999998, mv_time = 1939.602, q_mv_time = 353.37400000000014
+< q_time = 101.32872092483261, q_mv_time = 434.3194189033069
+> q = 14b, mv = mv8
+= q_time = 209.5805, mv_time = 3466.863, q_mv_time = 343.4534999999999
+< q_time = 375.75293094194524, q_mv_time = 415.66983625956465
+> q = 22c, mv = mv25
+= q_time = 3421.135999999998, mv_time = 226.662, q_mv_time = 2558.146
+< q_time = 1012.0930207769335, q_mv_time = 1205.4474129491475
+> q = 11b, mv = mv1
+= q_time = 14.635000000000002, mv_time = 596.047, q_mv_time = 9.646000000000006
+< q_time = 203.1430077116076, q_mv_time = 352.43963003328304
+> q = 1d, mv = mv1
+= q_time = 0.39300000000000007, mv_time = 596.047, q_mv_time = 0.2795
+< q_time = 116.28195024911655, q_mv_time = 2.5416605224012563
+> q = 19c, mv = mv14
+= q_time = 1249.4204999999997, mv_time = 3900.358, q_mv_time = 901.9005
+< q_time = 3439.840528094402, q_mv_time = 1533.2728053893131
+> q = 22d, mv = mv18
+= q_time = 3143.2300000000023, mv_time = 480.071, q_mv_time = 4773.691999999998
+< q_time = 1061.1422178749651, q_mv_time = 971.767428266634
+evaluate randomly
+> q = 2a, mv = mv3
+= q_time = 670.5734999999997, mv_time = 115.611, q_mv_time = 599.4475
+< q_time = 101.32872092483261, q_mv_time = 330.9526232978979
+> q = 3a, mv = mv8
+= q_time = 262.1990000000001, mv_time = 3466.863, q_mv_time = 112.37699999999997
+< q_time = 302.67841924427995, q_mv_time = 41.38450788259205
+> q = 9d, mv = mv14
+= q_time = 6557.652500000006, mv_time = 3900.358, q_mv_time = 5797.884500000003
+< q_time = 1057.244270618914, q_mv_time = 1374.607958651894
+> q = 12c, mv = mv20
+= q_time = 2411.4780000000005, mv_time = 178.612, q_mv_time = 2571.3179999999998
+< q_time = 299.7073872255916, q_mv_time = 1116.4535363822354
+> q = 8c, mv = mv13
+= q_time = 50387.91599999997, mv_time = 2868.45, q_mv_time = 141485.62349999987
+< q_time = 19976.75129658401, q_mv_time = 17348.32811437973
+> q = 5b, mv = mv1
+= q_time = 365.752, mv_time = 596.047, q_mv_time = 102.89099999999999
+< q_time = 311.8876911866491, q_mv_time = 263.5135744011628
+> q = 12a, mv = mv24
+= q_time = 546.4815000000001, mv_time = 195.702, q_mv_time = 961.3940000000001
+< q_time = 329.96704579177185, q_mv_time = 1121.2838254954959
+> q = 23a, mv = mv18
+= q_time = 349.05350000000016, mv_time = 480.071, q_mv_time = 227.5374999999999
+< q_time = 520.0297831181582, q_mv_time = 2786.5660338205225
+> q = 23a, mv = mv13
+= q_time = 349.05350000000016, mv_time = 2868.45, q_mv_time = 654.5575000000001
+< q_time = 520.0297831181582, q_mv_time = 11798.648595075392
+> q = 5b, mv = mv8
+= q_time = 365.752, mv_time = 3466.863, q_mv_time = 363.8139999999999
+< q_time = 311.8876911866491, q_mv_time = 217.8479215217983
+evaluate validation set
+> q = 14a, mv = mv25
+= q_time = 633.1115000000001, mv_time = 226.662, q_mv_time = 543.4030000000002
+< q_time = 1287.2352074716102, q_mv_time = 850.0761422570101
+> q = 6e, mv = mv4
+= q_time = 33.9525, mv_time = 2030.839, q_mv_time = 456.0544999999999
+< q_time = 669.3919969989644, q_mv_time = 583.4740290225998
+> q = 6e, mv = mv4
+= q_time = 33.9525, mv_time = 2030.839, q_mv_time = 456.0544999999999
+< q_time = 669.3919969989644, q_mv_time = 583.4740290225998
+> q = 19c, mv = mv14
+= q_time = 1249.4204999999997, mv_time = 3900.358, q_mv_time = 901.9005
+< q_time = 3439.840528094402, q_mv_time = 1533.2728053893131
+> q = 6e, mv = mv4
+= q_time = 33.9525, mv_time = 2030.839, q_mv_time = 456.0544999999999
+< q_time = 669.3919969989644, q_mv_time = 583.4740290225998
+> q = 11b, mv = mv1
+= q_time = 14.635000000000002, mv_time = 596.047, q_mv_time = 9.646000000000006
+< q_time = 203.1430077116076, q_mv_time = 352.43963003328304
+> q = 15b, mv = mv26
+= q_time = 48.9645, mv_time = 18331.651, q_mv_time = 3759.7445000000016
+< q_time = 408.9395173193486, q_mv_time = 1210.7413294608912
+> q = 9b, mv = mv14
+= q_time = 778.0355, mv_time = 3900.358, q_mv_time = 633.0235000000001
+< q_time = 6412.241537095228, q_mv_time = 2559.6008629014927
+> q = 15b, mv = mv26
+= q_time = 48.9645, mv_time = 18331.651, q_mv_time = 3759.7445000000016
+< q_time = 408.9395173193486, q_mv_time = 1210.7413294608912
+> q = 6e, mv = mv4
+= q_time = 33.9525, mv_time = 2030.839, q_mv_time = 456.0544999999999
+< q_time = 669.3919969989644, q_mv_time = 583.4740290225998
+input: q = 1a, mv = mv1
+input: q = 1a, mv = mv2
+input: q = 2a, mv = mv3
+input: q = 2a, mv = mv6
+2m 40s (- 0m 0s) (39 100%) trainLoss: 0.3383, valiLoss: 0.2379
+2m 25s (- 0m 0s) (39 100%) trainLoss: 0.2484, valiLoss: 0.3466
+2m 32s (- 0m 0s) (39 100%) trainLoss: 0.2741, valiLoss: 0.2245
+2m 42s (- 0m 0s) (39 100%) trainLoss: 0.3809, valiLoss: 0.1165
+2m 45s (- 0m 0s) (39 100%) trainLoss: 0.2561, valiLoss: 0.1982
+budget used up while doing trainIters()
+budget used up while doing do_continuously()
+evaluate vali set
+> q = 6a, mv = mv9
+= q_time = 1200.0, mv_time = 16.527, q_mv_time = 1200.0
+< q_time = 1256.9133042640974, q_mv_time = 893.0218414917189
+> q = 32b, mv = mv3
+= q_time = 1200.0, mv_time = 115.611, q_mv_time = 1200.0
+< q_time = 1154.2703524172377, q_mv_time = 1234.6010634112076
+> q = 6f, mv = mv4
+= q_time = 1200.0, mv_time = 2030.839, q_mv_time = 1200.0
+< q_time = 1285.2641244925999, q_mv_time = 894.4912377847725
+> q = 9b, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 2047.7852820393987, q_mv_time = 1261.1332292840784
+> q = 11d, mv = mv17
+= q_time = 1200.0, mv_time = 555.524, q_mv_time = 1200.0
+< q_time = 947.4368036124024, q_mv_time = 1183.172935473463
+> q = 30c, mv = mv29
+= q_time = 1200.0, mv_time = 3962.874, q_mv_time = 1200.0
+< q_time = 1223.827092629085, q_mv_time = 1184.6593318857233
+> q = 29a, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1312.251682219931, q_mv_time = 1306.1665678462102
+> q = 8c, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 2124.8204528444276, q_mv_time = 1273.9024526832804
+> q = 33b, mv = mv18
+= q_time = 20.059344291687015, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 791.4533631535762, q_mv_time = 1147.497413707069
+> q = 33a, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 20.662665843963612
+< q_time = 932.545641850607, q_mv_time = 1118.9269858194953
+> q = 19a, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 1928.1327867632592, q_mv_time = 1212.6000357967919
+> q = 17b, mv = mv3
+= q_time = 1200.0, mv_time = 115.611, q_mv_time = 1200.0
+< q_time = 1404.5713095977987, q_mv_time = 1256.936251421131
+> q = 20b, mv = mv22
+= q_time = 1200.0, mv_time = 562.938, q_mv_time = 1200.0
+< q_time = 1518.5390569573387, q_mv_time = 1150.8226554405317
+> q = 25b, mv = mv19
+= q_time = 20.87124371528626, mv_time = 375.011, q_mv_time = 1200.0
+< q_time = 773.8196946423989, q_mv_time = 1249.9562018758809
+> q = 29a, mv = mv14
+= q_time = 1200.0, mv_time = 3900.358, q_mv_time = 1200.0
+< q_time = 1312.251682219931, q_mv_time = 1224.1275492943014
+> q = 17e, mv = mv3
+= q_time = 1200.0, mv_time = 115.611, q_mv_time = 1200.0
+< q_time = 1095.7988498232792, q_mv_time = 1236.9249552598285
+> q = 27b, mv = mv17
+= q_time = 1200.0, mv_time = 555.524, q_mv_time = 1200.0
+< q_time = 1125.8807265822154, q_mv_time = 1235.0982869586073
+> q = 16c, mv = mv28
+= q_time = 1200.0, mv_time = 387.261, q_mv_time = 1200.0
+< q_time = 1221.5034747720779, q_mv_time = 1210.8210197868177
+> q = 30b, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 1421.11864188602, q_mv_time = 1209.894802779174
+> q = 19d, mv = mv14
+= q_time = 1200.0, mv_time = 3900.358, q_mv_time = 1200.0
+< q_time = 1516.8350677385233, q_mv_time = 1184.953069387634
+evaluate randomly
+> q = 28b, mv = mv24
+= q_time = 1200.0, mv_time = 195.702, q_mv_time = 1200.0
+< q_time = 1019.2604209270384, q_mv_time = 1210.0443659813925
+> q = 18c, mv = mv29
+= q_time = 1200.0, mv_time = 3962.874, q_mv_time = 1200.0
+< q_time = 1282.1243863171276, q_mv_time = 1204.613794173795
+> q = 1d, mv = mv2
+= q_time = 1200.0, mv_time = 419.287, q_mv_time = 1200.0
+< q_time = 684.3287345865776, q_mv_time = 1070.95891889366
+> q = 22a, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 1234.2180780199621, q_mv_time = 1230.9740579850718
+> q = 12c, mv = mv1
+= q_time = 1200.0, mv_time = 596.047, q_mv_time = 1200.0
+< q_time = 992.0279010695086, q_mv_time = 1134.85493632442
+> q = 11b, mv = mv1
+= q_time = 1200.0, mv_time = 596.047, q_mv_time = 1200.0
+< q_time = 947.5738094050523, q_mv_time = 1052.8098518698882
+> q = 31a, mv = mv29
+= q_time = 1200.0, mv_time = 3962.874, q_mv_time = 1200.0
+< q_time = 1348.3949865243064, q_mv_time = 1291.9936413383834
+> q = 1d, mv = mv1
+= q_time = 1200.0, mv_time = 596.047, q_mv_time = 1200.0
+< q_time = 684.3287345865776, q_mv_time = 1107.8254770641825
+> q = 22b, mv = mv25
+= q_time = 1200.0, mv_time = 226.662, q_mv_time = 1200.0
+< q_time = 1235.5448122429088, q_mv_time = 1264.156301946637
+> q = 2d, mv = mv6
+= q_time = 1200.0, mv_time = 1939.602, q_mv_time = 1200.0
+< q_time = 647.5590892404565, q_mv_time = 1029.228425115111
+evaluate validation set
+> q = 27b, mv = mv17
+= q_time = 1200.0, mv_time = 555.524, q_mv_time = 1200.0
+< q_time = 1125.8807265822154, q_mv_time = 1235.0982869586073
+> q = 6a, mv = mv9
+= q_time = 1200.0, mv_time = 16.527, q_mv_time = 1200.0
+< q_time = 1256.9133042640974, q_mv_time = 893.0218414917189
+> q = 32b, mv = mv3
+= q_time = 1200.0, mv_time = 115.611, q_mv_time = 1200.0
+< q_time = 1154.2703524172377, q_mv_time = 1234.6010634112076
+> q = 33b, mv = mv18
+= q_time = 20.059344291687015, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 791.4533631535762, q_mv_time = 1147.497413707069
+> q = 9b, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 2047.7852820393987, q_mv_time = 1261.1332292840784
+> q = 9b, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 2047.7852820393987, q_mv_time = 1261.1332292840784
+> q = 17e, mv = mv3
+= q_time = 1200.0, mv_time = 115.611, q_mv_time = 1200.0
+< q_time = 1095.7988498232792, q_mv_time = 1236.9249552598285
+> q = 27b, mv = mv17
+= q_time = 1200.0, mv_time = 555.524, q_mv_time = 1200.0
+< q_time = 1125.8807265822154, q_mv_time = 1235.0982869586073
+> q = 19d, mv = mv14
+= q_time = 1200.0, mv_time = 3900.358, q_mv_time = 1200.0
+< q_time = 1516.8350677385233, q_mv_time = 1184.953069387634
+> q = 17e, mv = mv3
+= q_time = 1200.0, mv_time = 115.611, q_mv_time = 1200.0
+< q_time = 1095.7988498232792, q_mv_time = 1236.9249552598285
+input: q = 1a, mv = mv1
+input: q = 1a, mv = mv2
+input: q = 2a, mv = mv3
+input: q = 2a, mv = mv6
+3m 0s (- 0m 0s) (45 100%) trainLoss: 0.1799, valiLoss: 0.2738
+3m 3s (- 0m 0s) (45 100%) trainLoss: 0.1705, valiLoss: 0.5417
+2m 46s (- 0m 0s) (45 100%) trainLoss: 0.0533, valiLoss: 0.1797
+3m 10s (- 0m 0s) (45 100%) trainLoss: 0.1310, valiLoss: 0.1898
+3m 14s (- 0m 0s) (45 100%) trainLoss: 0.1209, valiLoss: 0.0056
+budget used up while doing do_continuously()
+evaluate vali set
+> q = 28a, mv = mv8
+= q_time = 1200.0, mv_time = 3466.863, q_mv_time = 1200.0
+< q_time = 1142.832535392343, q_mv_time = 1180.3283106617314
+> q = 14a, mv = mv25
+= q_time = 1200.0, mv_time = 226.662, q_mv_time = 1200.0
+< q_time = 1061.8683107410025, q_mv_time = 1160.3403676784724
+> q = 27a, mv = mv1
+= q_time = 1200.0, mv_time = 596.047, q_mv_time = 1200.0
+< q_time = 1137.3865360250988, q_mv_time = 1169.1905955565012
+> q = 7b, mv = mv11
+= q_time = 1200.0, mv_time = 14201.748, q_mv_time = 1200.0
+< q_time = 870.1478256670845, q_mv_time = 1195.324232705125
+> q = 26a, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 1027.7322124294667, q_mv_time = 1188.1897582805002
+> q = 21b, mv = mv1
+= q_time = 1200.0, mv_time = 596.047, q_mv_time = 1200.0
+< q_time = 1170.5498496207726, q_mv_time = 1179.9406116462187
+> q = 12a, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1209.546137701535, q_mv_time = 1202.7009483738732
+> q = 28b, mv = mv8
+= q_time = 1200.0, mv_time = 3466.863, q_mv_time = 1200.0
+< q_time = 1076.2247404964635, q_mv_time = 1182.2239827141093
+> q = 27a, mv = mv17
+= q_time = 1200.0, mv_time = 555.524, q_mv_time = 1200.0
+< q_time = 1137.3865360250988, q_mv_time = 1172.8491732663358
+> q = 27b, mv = mv1
+= q_time = 1200.0, mv_time = 596.047, q_mv_time = 1200.0
+< q_time = 1196.0336910121532, q_mv_time = 1179.1889009809586
+> q = 22d, mv = mv8
+= q_time = 1200.0, mv_time = 3466.863, q_mv_time = 1200.0
+< q_time = 1084.0021347968288, q_mv_time = 1175.3292531150169
+> q = 9d, mv = mv14
+= q_time = 1200.0, mv_time = 3900.358, q_mv_time = 1200.0
+< q_time = 1059.4743533890075, q_mv_time = 1201.781547666107
+> q = 22b, mv = mv25
+= q_time = 1200.0, mv_time = 226.662, q_mv_time = 1200.0
+< q_time = 1085.144475146114, q_mv_time = 1183.37809856513
+> q = 19c, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1150.9129902629993, q_mv_time = 1216.9643108140735
+> q = 25a, mv = mv29
+= q_time = 1200.0, mv_time = 3962.874, q_mv_time = 1200.0
+< q_time = 1511.6872724492353, q_mv_time = 1215.5418533032228
+> q = 15d, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1018.5452245767692, q_mv_time = 1210.839644029753
+> q = 17f, mv = mv3
+= q_time = 1200.0, mv_time = 115.611, q_mv_time = 1200.0
+< q_time = 915.8648334918453, q_mv_time = 1178.7747222515688
+> q = 14b, mv = mv8
+= q_time = 1200.0, mv_time = 3466.863, q_mv_time = 1200.0
+< q_time = 1153.284054351303, q_mv_time = 1186.0671014878303
+> q = 16c, mv = mv3
+= q_time = 1200.0, mv_time = 115.611, q_mv_time = 1200.0
+< q_time = 1203.2059392573726, q_mv_time = 1186.5545280183526
+> q = 26c, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 1124.7954394349053, q_mv_time = 1184.0723217818281
+evaluate randomly
+> q = 28c, mv = mv25
+= q_time = 1200.0, mv_time = 226.662, q_mv_time = 1200.0
+< q_time = 1167.2091436254864, q_mv_time = 1199.545822236528
+> q = 2a, mv = mv3
+= q_time = 1200.0, mv_time = 115.611, q_mv_time = 1200.0
+< q_time = 1106.2786516194558, q_mv_time = 1183.592453412661
+> q = 1a, mv = mv1
+= q_time = 1200.0, mv_time = 596.047, q_mv_time = 1200.0
+< q_time = 874.831903883856, q_mv_time = 1191.931488347612
+> q = 13c, mv = mv22
+= q_time = 1200.0, mv_time = 562.938, q_mv_time = 20.8916015625
+< q_time = 1183.1523443450856, q_mv_time = 1202.6114180109232
+> q = 27b, mv = mv8
+= q_time = 1200.0, mv_time = 3466.863, q_mv_time = 1200.0
+< q_time = 1196.0336910121532, q_mv_time = 1187.3185280101409
+> q = 23b, mv = mv22
+= q_time = 1200.0, mv_time = 562.938, q_mv_time = 1200.0
+< q_time = 1113.2602349044137, q_mv_time = 1198.597815310233
+> q = 1d, mv = mv1
+= q_time = 1200.0, mv_time = 596.047, q_mv_time = 1200.0
+< q_time = 877.2577741629324, q_mv_time = 1195.8699806035952
+> q = 5a, mv = mv8
+= q_time = 21.637471675872817, mv_time = 3466.863, q_mv_time = 1200.0
+< q_time = 600.7777204795296, q_mv_time = 1195.7306303354135
+> q = 25b, mv = mv19
+= q_time = 20.87124371528626, mv_time = 375.011, q_mv_time = 1200.0
+< q_time = 623.8989934986547, q_mv_time = 1139.2969213710733
+> q = 6c, mv = mv9
+= q_time = 1200.0, mv_time = 16.527, q_mv_time = 1200.0
+< q_time = 1083.24530962541, q_mv_time = 1159.8423258941584
+evaluate validation set
+> q = 19c, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1150.9129902629993, q_mv_time = 1216.9643108140735
+> q = 28b, mv = mv8
+= q_time = 1200.0, mv_time = 3466.863, q_mv_time = 1200.0
+< q_time = 1076.2247404964635, q_mv_time = 1182.2239827141093
+> q = 15d, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1018.5452245767692, q_mv_time = 1210.839644029753
+> q = 12a, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1209.546137701535, q_mv_time = 1202.7009483738732
+> q = 28a, mv = mv8
+= q_time = 1200.0, mv_time = 3466.863, q_mv_time = 1200.0
+< q_time = 1142.832535392343, q_mv_time = 1180.3283106617314
+> q = 16c, mv = mv3
+= q_time = 1200.0, mv_time = 115.611, q_mv_time = 1200.0
+< q_time = 1203.2059392573726, q_mv_time = 1186.5545280183526
+> q = 19c, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1150.9129902629993, q_mv_time = 1216.9643108140735
+> q = 22b, mv = mv25
+= q_time = 1200.0, mv_time = 226.662, q_mv_time = 1200.0
+< q_time = 1085.144475146114, q_mv_time = 1183.37809856513
+> q = 7b, mv = mv11
+= q_time = 1200.0, mv_time = 14201.748, q_mv_time = 1200.0
+< q_time = 870.1478256670845, q_mv_time = 1195.324232705125
+> q = 25a, mv = mv29
+= q_time = 1200.0, mv_time = 3962.874, q_mv_time = 1200.0
+< q_time = 1511.6872724492353, q_mv_time = 1215.5418533032228
+input: q = 1a, mv = mv1
+input: q = 1a, mv = mv2
+input: q = 2a, mv = mv3
+input: q = 2a, mv = mv6
+3m 24s (- 0m 0s) (50 100%) trainLoss: 0.2466, valiLoss: 0.2842
+3m 39s (- 0m 0s) (50 100%) trainLoss: 0.2420, valiLoss: 0.1005
+3m 37s (- 0m 0s) (50 100%) trainLoss: 0.1774, valiLoss: 0.2832
+3m 32s (- 0m 0s) (50 100%) trainLoss: 0.2603, valiLoss: 0.4598
+budget used up while doing trainIters()
+budget used up while doing do_continuously()
+evaluate vali set
+> q = 26b, mv = mv20
+= q_time = 1200.0, mv_time = 178.612, q_mv_time = 1200.0
+< q_time = 1197.349846607848, q_mv_time = 1272.22201098418
+> q = 19c, mv = mv14
+= q_time = 1200.0, mv_time = 3900.358, q_mv_time = 1200.0
+< q_time = 1231.503170946855, q_mv_time = 1222.6995782957247
+> q = 28b, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 1070.0707846173261, q_mv_time = 1212.9864751530972
+> q = 7a, mv = mv10
+= q_time = 1200.0, mv_time = 17363.013, q_mv_time = 1200.0
+< q_time = 1008.250785191993, q_mv_time = 1139.8195503981171
+> q = 23a, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1116.1448902013924, q_mv_time = 1216.784456592061
+> q = 20c, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 1219.6414094095485, q_mv_time = 1234.6992944906638
+> q = 12a, mv = mv1
+= q_time = 1200.0, mv_time = 596.047, q_mv_time = 1200.0
+< q_time = 1155.387317056399, q_mv_time = 1073.484440059798
+> q = 22d, mv = mv25
+= q_time = 1200.0, mv_time = 226.662, q_mv_time = 1200.0
+< q_time = 1213.4098291682183, q_mv_time = 1217.03195842535
+> q = 22a, mv = mv8
+= q_time = 1200.0, mv_time = 3466.863, q_mv_time = 1200.0
+< q_time = 1268.4300244721142, q_mv_time = 1200.613459449925
+> q = 9c, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1129.1964734572773, q_mv_time = 1227.088078441794
+> q = 21b, mv = mv1
+= q_time = 1200.0, mv_time = 596.047, q_mv_time = 1200.0
+< q_time = 1122.8552182349813, q_mv_time = 1112.3459825995703
+> q = 1d, mv = mv2
+= q_time = 1200.0, mv_time = 419.287, q_mv_time = 1200.0
+< q_time = 881.0904386009968, q_mv_time = 986.422276285835
+> q = 9d, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1175.4065432799568, q_mv_time = 1222.5167094668352
+> q = 8b, mv = mv12
+= q_time = 1200.0, mv_time = 944.682, q_mv_time = 1200.0
+< q_time = 1214.3928343150135, q_mv_time = 1252.6611279875399
+> q = 16b, mv = mv3
+= q_time = 1200.0, mv_time = 115.611, q_mv_time = 1200.0
+< q_time = 1161.9855332511017, q_mv_time = 1216.2545958451335
+> q = 12b, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 1183.6946166376595, q_mv_time = 1199.0609729672537
+> q = 9b, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1199.0368672769914, q_mv_time = 1230.1611511084043
+> q = 2b, mv = mv3
+= q_time = 1200.0, mv_time = 115.611, q_mv_time = 1200.0
+< q_time = 866.0592643375376, q_mv_time = 1224.510814203702
+> q = 15a, mv = mv26
+= q_time = 1200.0, mv_time = 18331.651, q_mv_time = 1200.0
+< q_time = 999.9426383790749, q_mv_time = 1199.957992770184
+> q = 22a, mv = mv25
+= q_time = 1200.0, mv_time = 226.662, q_mv_time = 1200.0
+< q_time = 1268.4300244721142, q_mv_time = 1225.1557380725599
+evaluate randomly
+> q = 3a, mv = mv8
+= q_time = 1200.0, mv_time = 3466.863, q_mv_time = 1200.0
+< q_time = 1159.2386194955393, q_mv_time = 1191.7589489886484
+> q = 1d, mv = mv1
+= q_time = 1200.0, mv_time = 596.047, q_mv_time = 1200.0
+< q_time = 881.0904386009968, q_mv_time = 1095.0649255279502
+> q = 3a, mv = mv8
+= q_time = 1200.0, mv_time = 3466.863, q_mv_time = 1200.0
+< q_time = 1159.2386194955393, q_mv_time = 1191.7589489886484
+> q = 28a, mv = mv8
+= q_time = 1200.0, mv_time = 3466.863, q_mv_time = 1200.0
+< q_time = 1206.1976128079161, q_mv_time = 1178.0010084178248
+> q = 19d, mv = mv14
+= q_time = 1200.0, mv_time = 3900.358, q_mv_time = 1200.0
+< q_time = 1257.3442100395418, q_mv_time = 1220.8291303841177
+> q = 7c, mv = mv10
+= q_time = 1200.0, mv_time = 17363.013, q_mv_time = 1200.0
+< q_time = 1252.929757853681, q_mv_time = 1105.9561896048137
+> q = 31c, mv = mv29
+= q_time = 1200.0, mv_time = 3962.874, q_mv_time = 1200.0
+< q_time = 1161.8303409427278, q_mv_time = 1203.311048828772
+> q = 19a, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1187.4699921608014, q_mv_time = 1236.7573319962062
+> q = 23a, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 1116.1448902013924, q_mv_time = 1222.6893207222172
+> q = 31a, mv = mv29
+= q_time = 1200.0, mv_time = 3962.874, q_mv_time = 1200.0
+< q_time = 1319.644955733878, q_mv_time = 1202.3151152196358
+evaluate validation set
+> q = 9d, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1175.4065432799568, q_mv_time = 1222.5167094668352
+> q = 22d, mv = mv25
+= q_time = 1200.0, mv_time = 226.662, q_mv_time = 1200.0
+< q_time = 1213.4098291682183, q_mv_time = 1217.03195842535
+> q = 28b, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 1070.0707846173261, q_mv_time = 1212.9864751530972
+> q = 26b, mv = mv20
+= q_time = 1200.0, mv_time = 178.612, q_mv_time = 1200.0
+< q_time = 1197.349846607848, q_mv_time = 1272.22201098418
+> q = 8b, mv = mv12
+= q_time = 1200.0, mv_time = 944.682, q_mv_time = 1200.0
+< q_time = 1214.3928343150135, q_mv_time = 1252.6611279875399
+> q = 26b, mv = mv20
+= q_time = 1200.0, mv_time = 178.612, q_mv_time = 1200.0
+< q_time = 1197.349846607848, q_mv_time = 1272.22201098418
+> q = 1d, mv = mv2
+= q_time = 1200.0, mv_time = 419.287, q_mv_time = 1200.0
+< q_time = 881.0904386009968, q_mv_time = 986.422276285835
+> q = 12b, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 1183.6946166376595, q_mv_time = 1199.0609729672537
+> q = 26b, mv = mv20
+= q_time = 1200.0, mv_time = 178.612, q_mv_time = 1200.0
+< q_time = 1197.349846607848, q_mv_time = 1272.22201098418
+> q = 26b, mv = mv20
+= q_time = 1200.0, mv_time = 178.612, q_mv_time = 1200.0
+< q_time = 1197.349846607848, q_mv_time = 1272.22201098418
+input: q = 1a, mv = mv1
+input: q = 1a, mv = mv2
+input: q = 2a, mv = mv3
+input: q = 2a, mv = mv6
+3m 7s (- 0m 0s) (50 100%) trainLoss: 0.2341, valiLoss: 0.1700
+3m 12s (- 0m 0s) (50 100%) trainLoss: 0.4040, valiLoss: 0.2508
+3m 21s (- 0m 0s) (50 100%) trainLoss: 0.2450, valiLoss: 0.3390
+3m 43s (- 0m 0s) (50 100%) trainLoss: 0.1462, valiLoss: 0.3291
+3m 32s (- 0m 0s) (50 100%) trainLoss: 0.3277, valiLoss: 0.0034
+budget used up while doing do_continuously()
+evaluate vali set
+> q = 17b, mv = mv3
+= q_time = 1200.0, mv_time = 115.611, q_mv_time = 1200.0
+< q_time = 1214.875960873537, q_mv_time = 1152.8233713225957
+> q = 12c, mv = mv21
+= q_time = 1200.0, mv_time = 2350.995, q_mv_time = 1200.0
+< q_time = 1161.4535501714897, q_mv_time = 1150.7649282999034
+> q = 9c, mv = mv14
+= q_time = 1200.0, mv_time = 3900.358, q_mv_time = 1200.0
+< q_time = 1141.3697651549987, q_mv_time = 1160.4498736332703
+> q = 16a, mv = mv3
+= q_time = 1200.0, mv_time = 115.611, q_mv_time = 1200.0
+< q_time = 1185.0886846256926, q_mv_time = 1145.6489319217546
+> q = 9c, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1141.3697651549987, q_mv_time = 1082.749458906694
+> q = 9d, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1215.8033843952214, q_mv_time = 1058.9075503028614
+> q = 13d, mv = mv22
+= q_time = 1200.0, mv_time = 562.938, q_mv_time = 1200.0
+< q_time = 1225.7658161511845, q_mv_time = 1036.5123287328465
+> q = 26c, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 1219.3469227833275, q_mv_time = 1181.749547334579
+> q = 19a, mv = mv14
+= q_time = 1200.0, mv_time = 3900.358, q_mv_time = 1200.0
+< q_time = 1208.520230302959, q_mv_time = 1165.9818856721206
+> q = 28a, mv = mv8
+= q_time = 1200.0, mv_time = 3466.863, q_mv_time = 1200.0
+< q_time = 1162.8799721489415, q_mv_time = 1144.2464879768559
+> q = 11b, mv = mv1
+= q_time = 1200.0, mv_time = 596.047, q_mv_time = 1200.0
+< q_time = 1187.9397367646568, q_mv_time = 953.5221711114236
+> q = 14b, mv = mv8
+= q_time = 1200.0, mv_time = 3466.863, q_mv_time = 1200.0
+< q_time = 1143.0421366242458, q_mv_time = 1180.0446739981262
+> q = 19d, mv = mv14
+= q_time = 1200.0, mv_time = 3900.358, q_mv_time = 1200.0
+< q_time = 1211.0478012920946, q_mv_time = 1181.025714285235
+> q = 19c, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 1169.1025265736139, q_mv_time = 1164.45830297986
+> q = 7a, mv = mv10
+= q_time = 1200.0, mv_time = 17363.013, q_mv_time = 1200.0
+< q_time = 1214.6286959281033, q_mv_time = 1070.2651592982518
+> q = 6b, mv = mv4
+= q_time = 1200.0, mv_time = 2030.839, q_mv_time = 1200.0
+< q_time = 1118.4160396519637, q_mv_time = 950.3394666825483
+> q = 24a, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1056.9177072502619, q_mv_time = 1065.7047761706692
+> q = 9b, mv = mv14
+= q_time = 1200.0, mv_time = 3900.358, q_mv_time = 1200.0
+< q_time = 1202.983492413917, q_mv_time = 1143.5334130922251
+> q = 27b, mv = mv8
+= q_time = 1200.0, mv_time = 3466.863, q_mv_time = 1200.0
+< q_time = 1157.393898109926, q_mv_time = 1176.6950368935472
+> q = 22c, mv = mv25
+= q_time = 1200.0, mv_time = 226.662, q_mv_time = 1200.0
+< q_time = 1134.6516046917318, q_mv_time = 1160.0331996107432
+evaluate randomly
+> q = 27a, mv = mv8
+= q_time = 1200.0, mv_time = 3466.863, q_mv_time = 1200.0
+< q_time = 1159.4288584634253, q_mv_time = 1184.0903489852642
+> q = 26b, mv = mv20
+= q_time = 1200.0, mv_time = 178.612, q_mv_time = 1200.0
+< q_time = 1231.0197981583372, q_mv_time = 1143.063018913214
+> q = 31b, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 895.7163534676167, q_mv_time = 1158.4326699376006
+> q = 4c, mv = mv2
+= q_time = 1200.0, mv_time = 419.287, q_mv_time = 1200.0
+< q_time = 1213.631833264582, q_mv_time = 1131.1599872578265
+> q = 19d, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 1211.0478012920946, q_mv_time = 1153.8550319535293
+> q = 32b, mv = mv3
+= q_time = 1200.0, mv_time = 115.611, q_mv_time = 1200.0
+< q_time = 1217.9360674384152, q_mv_time = 1151.965161483669
+> q = 1c, mv = mv1
+= q_time = 1200.0, mv_time = 596.047, q_mv_time = 1200.0
+< q_time = 1115.5760562235796, q_mv_time = 1071.3421096952297
+> q = 32b, mv = mv3
+= q_time = 1200.0, mv_time = 115.611, q_mv_time = 1200.0
+< q_time = 1217.9360674384152, q_mv_time = 1151.965161483669
+> q = 14c, mv = mv8
+= q_time = 1200.0, mv_time = 3466.863, q_mv_time = 1200.0
+< q_time = 1102.6880861611467, q_mv_time = 1181.856356932192
+> q = 31b, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 895.7163534676167, q_mv_time = 1158.4326699376006
+evaluate validation set
+> q = 11b, mv = mv1
+= q_time = 1200.0, mv_time = 596.047, q_mv_time = 1200.0
+< q_time = 1187.9397367646568, q_mv_time = 953.5221711114236
+> q = 19a, mv = mv14
+= q_time = 1200.0, mv_time = 3900.358, q_mv_time = 1200.0
+< q_time = 1208.520230302959, q_mv_time = 1165.9818856721206
+> q = 9c, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1141.3697651549987, q_mv_time = 1082.749458906694
+> q = 9d, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1215.8033843952214, q_mv_time = 1058.9075503028614
+> q = 19c, mv = mv18
+= q_time = 1200.0, mv_time = 480.071, q_mv_time = 1200.0
+< q_time = 1169.1025265736139, q_mv_time = 1164.45830297986
+> q = 11b, mv = mv1
+= q_time = 1200.0, mv_time = 596.047, q_mv_time = 1200.0
+< q_time = 1187.9397367646568, q_mv_time = 953.5221711114236
+> q = 11b, mv = mv1
+= q_time = 1200.0, mv_time = 596.047, q_mv_time = 1200.0
+< q_time = 1187.9397367646568, q_mv_time = 953.5221711114236
+> q = 24a, mv = mv13
+= q_time = 1200.0, mv_time = 2868.45, q_mv_time = 1200.0
+< q_time = 1056.9177072502619, q_mv_time = 1065.7047761706692
+> q = 6b, mv = mv4
+= q_time = 1200.0, mv_time = 2030.839, q_mv_time = 1200.0
+< q_time = 1118.4160396519637, q_mv_time = 950.3394666825483
+> q = 19a, mv = mv14
+= q_time = 1200.0, mv_time = 3900.358, q_mv_time = 1200.0
+< q_time = 1208.520230302959, q_mv_time = 1165.9818856721206
+input: q = 1a, mv = mv1
+input: q = 1a, mv = mv2
+input: q = 2a, mv = mv3
+input: q = 2a, mv = mv6

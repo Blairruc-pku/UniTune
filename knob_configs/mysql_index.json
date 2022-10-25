@@ -1,0 +1,82 @@
+{
+    "eq_range_index_dive_limit": {
+        "default": 200,
+        "dynamic": "Yes",
+        "max": 4294967295,
+        "min": 0,
+        "scope": "Global, Session",
+        "type": "integer"
+    },
+    "innodb_adaptive_hash_index": {
+        "default": "on",
+        "dynamic": "Yes",
+        "enum_values": [
+            "on",
+            "off"
+        ],
+        "scope": "Global",
+        "type": "enum"
+    },
+    "innodb_adaptive_hash_index_parts": {
+        "default": 8,
+        "dynamic": "No",
+        "max": 512,
+        "min": 1,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "innodb_buffer_pool_size": {
+        "default": 13958643712,
+        "dynamic": "Yes",
+        "max": 15618062894,
+        "min": 10307921510,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "innodb_change_buffer_max_size": {
+        "default": 25,
+        "dynamic": "Yes",
+        "max": 50,
+        "min": 0,
+        "scope": "Global",
+        "type": "integer"
+    },
+    "innodb_change_buffering": {
+        "default": "all",
+        "dynamic": "Yes",
+        "enum_values": [
+            "none",
+            "inserts",
+            "deletes",
+            "changes",
+            "purges",
+            "all"
+        ],
+        "scope": "Global",
+        "type": "enum"
+    },
+    "join_buffer_size": {
+        "default": 262144,
+        "dynamic": "Yes",
+        "max": 1073741824,
+        "min": 128,
+        "scope": "Global, Session",
+        "type": "integer"
+    },
+    "max_seeks_for_key": {
+        "default": 18446744073709500416,
+        "dynamic": "Yes",
+        "max": 18446744073709551615,
+        "min": 1,
+        "scope": "Global, Session",
+        "type": "integer"
+    },
+    "sort_buffer_size": {
+        "default": 262144,
+        "dynamic": "Yes",
+        "max": 134217728,
+        "min": 32768,
+        "scope": "Global, Session",
+        "type": "integer"
+    }
+}

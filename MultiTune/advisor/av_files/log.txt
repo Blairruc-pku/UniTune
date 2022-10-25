@@ -1,0 +1,53 @@
+[Thu Sep 29 09:40:00 2022]
+initializing advisor
+[Thu Sep 29 09:40:00 2022]
+initializing database module...
+[Thu Sep 29 09:40:00 2022]
+testing connection to database...
+[Thu Sep 29 09:40:20 2022]
+successfully connected to databse!
+[Thu Sep 29 09:40:20 2022]
+testing cursor getting...
+[Thu Sep 29 09:40:20 2022]
+successfully got cursor!
+[Thu Sep 29 09:40:20 2022]
+getting query list
+[Thu Sep 29 09:40:20 2022]
+getting mv and q_mv list, producing q_mv list file
+[Thu Sep 29 09:40:20 2022]
+producing trainset
+[Thu Sep 29 09:40:20 2022]
+iter 0
+[Thu Sep 29 09:40:20 2022]
+advise start with time_budget=1200 and mv_budget=500
+[Thu Sep 29 09:40:20 2022]
+found untested item and chose 27a-1
+[Thu Sep 29 09:40:20 2022]
+building view for q_mv
+[Thu Sep 29 09:40:20 2022]
+loading mv1
+[Thu Sep 29 09:40:20 2022]
+executing mv1:
+CREATE TABLE mv1 SELECT mc.movie_id,
+       mc.note,
+       mc.company_id
+FROM company_type AS ct,
+     movie_companies AS mc
+WHERE ct.kind = 'production companies'
+  AND ct.id = mc.company_type_id;
+[Thu Sep 29 09:42:00 2022]
+getting trainset for 27a-1
+[Thu Sep 29 09:42:00 2022]
+loading 27a-1
+[Thu Sep 29 09:42:00 2022]
+executing 27a-1
+[Thu Sep 29 09:42:20 2022]
+successfully executed 27a-1 using 20.571497678756714 seconds.
+[Thu Sep 29 09:42:20 2022]
+dropping view
+[Thu Sep 29 09:42:20 2022]
+dropping mv1
+[Thu Sep 29 09:42:42 2022]
+having enough time left, training...
+[Thu Sep 29 09:42:42 2022]
+...encoder_reducer with budget=878

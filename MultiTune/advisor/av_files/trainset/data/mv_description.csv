@@ -1,0 +1,30 @@
+mv1,"company_type, movie_companies",ct.kind = 'production companies'
+mv2,"info_type, movie_info_idx",
+mv3,"keyword, movie_keyword",character-name-in-title
+mv4,"keyword, movie_keyword",
+mv5,"keyword, movie_keyword, title",
+mv6,"company_name, movie_companies, company_type",
+mv7,"company_name, title",
+mv8,movie_info,"mi.info IN ('Sweden', 'Norway', 'Germany', 'Denmark', 'Swedish', 'Denish', 'Norwegian',  'German', 'Bulgaria', 'USA', 'American')"
+mv9,"keyword, movie_keyword, title",marvel-cinematic-universe
+mv10,"cast_info, name",n.name_pcode_cf BETWEEN 'A' AND 'F'
+mv11,"cast_info, name",n.name_pcode_cf LIKE 'D%'
+mv12,"company_name, movie_companies, title",cn.country_code ='[jp]'
+mv13,"company_name, movie_companies, title",cn.country_code ='[us]'
+mv14,cast_info,"ci.note IN ('(voice)', '(voice: Japanese version)', '(voice) (uncredited)', '(voice: English version)')"
+mv15,"company_name, movie_companies, title",cn.country_code ='[ru]'
+mv16,"company_name, movie_companies, title, cast_info, role_type",ci.note LIKE '%(producer)%' AND cn.country_code = '[ru]' AND rt.role = 'actor'
+mv17,title,t.production_year >= 1950
+mv18,title,t.production_year > 2000
+mv19,title,t.production_year > 2010
+mv20,"info_type, movie_info_idx",it.info = 'rating' AND mi_idx.info > '7.0'
+mv21,movie_info,"mi.info IN ('Drama', 'Horror', 'Western', 'Family')"
+mv22,"kind_type, title",kt.kind ='movie'
+mv23,title,t.title != '' AND (t.title LIKE '%Champion%' OR t.title LIKE '%Loser%')
+mv24,"info_type, movie_info_idx",it.info = 'rating' AND mi_idx.info > '6.0'
+mv25,"info_type, movie_info_idx",it.info = 'rating' AND mi_idx.info < '8.5'
+mv26,"movie_companies, movie_info",mc.note LIKE '%(200%)%'  AND mc.note LIKE '%(worldwide)%'  AND mi.note LIKE '%internet%' AND mi.info LIKE 'USA:% 200%'
+mv27,title,t.episode_nr >= 50
+mv28,title,t.episode_nr < 100
+mv29,cast_info,"ci.note IN ('(writer)', '(head writer)', '(written by)',  '(story)', '(story editor)')"
+mv30,title,t.production_year <= 2000
