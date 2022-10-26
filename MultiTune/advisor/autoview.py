@@ -9,7 +9,7 @@ from collections import defaultdict
 o_path = os.getcwd()
 o_path = o_path + "/./"
 sys.path.append('..')
-sys.path.append('/data2/ruike/MultiTune')
+sys.path.append('//MultiTune')
 sys.path.append(o_path)
 from MultiTune.advisor.rl_estimator import RLEstimator
 from MultiTune.utils.parser import parse_args

@@ -18,7 +18,7 @@ from openbox.utils.config_space import ConfigurationSpace, CategoricalHyperparam
 from .query_rewrite.configs import parse_cmd_args
 from MultiTune.utils.limit import time_limit,  TimeoutException
 from MultiTune.utils.ddpg.ddpg import DDPG
-sys.path.append('/data2/ruike/MultiTune')
+sys.path.append('//MultiTune')
 from MultiTune.utils.parser import parse_args, initialize_knobs, gen_continuous
 from MultiTune.database.base import DB
 from MultiTune.database.mysqldb import MysqlDB
@@ -59,7 +59,7 @@ class CDBTune(RL):
         self.mean_var_file = mean_var_file
         self.internal_metrics = []
         #Hard code
-        with open('/data2/ruike/IndexTool/optimize_history/tpch_0725_rb.res', 'r') as f:
+        with open('//IndexTool/optimize_history/tpch_0725_rb.res', 'r') as f:
             lines = f.readlines()
             lines = [line for line in lines if (not 'best|' in line) and (not 'observe-context|' in line)]
             for line in lines:

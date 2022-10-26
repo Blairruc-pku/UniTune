@@ -18,7 +18,7 @@ from openbox.utils.config_space import ConfigurationSpace, CategoricalHyperparam
 from .query_rewrite.configs import parse_cmd_args
 from MultiTune.utils.limit import time_limit,  TimeoutException
 from MultiTune.utils.ddpg.ddpg import DDPG
-sys.path.append('/data2/ruike/MultiTune')
+sys.path.append('//MultiTune')
 from MultiTune.utils.parser import parse_args, initialize_knobs, gen_continuous
 from MultiTune.database.base import DB
 from MultiTune.database.mysqldb import MysqlDB
@@ -152,7 +152,7 @@ class RL(Advisor):
 
 if __name__ == "__main__":
 
-    args_db, args_tune = parse_args('/data2/ruike/MultiTune/config.ini')
+    args_db, args_tune = parse_args('//MultiTune/config.ini')
     args = parse_cmd_args()
     db = MysqlDB(args_tune['task_id'], **args_db)
     adviser = RL(db=db, tune_index='False', tune_knob='True', **args_tune)

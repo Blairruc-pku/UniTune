@@ -25,7 +25,7 @@ from .query_rewrite.rewriter import rewrite
 from .query_rewrite.cost_estimator import  CostEstimator, CostEstimator_WithoutContext
 from .query_rewrite.configs import parse_cmd_args
 from MultiTune.utils.limit import time_limit,  TimeoutException
-sys.path.append('/data2/ruike/MultiTune')
+sys.path.append('//MultiTune')
 from MultiTune.utils.parser import parse_args
 from MultiTune.database.base import DB
 from MultiTune.database.mysqldb import MysqlDB

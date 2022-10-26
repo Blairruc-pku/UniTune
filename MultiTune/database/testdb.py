@@ -25,7 +25,7 @@ class TestDB(DB):
         super().__init__(*args, **kwargs)
         self.mysqld = mysqld
         self.db_connected = False
-        #self.loaded_rf = joblib.load(os.path.join("/data2/ruike/MultiTune/scripts/rf_models", model))
+        #self.loaded_rf = joblib.load(os.path.join("//MultiTune/scripts/rf_models", model))
         default_index = dict()
         for c in self.all_index_candidates:
             default_index['index.%s' % c] = 'off'
@@ -48,10 +48,10 @@ class TestDB(DB):
         super().__init__(*args, **kwargs)
 
     def get_grid_result(self):
-        f = open("/data2/ruike/MultiTune/scripts/table_models/table_result.json")
+        f = open("//MultiTune/scripts/table_models/table_result.json")
         config_perf_dict = json.load(f)
-        '''f1 = open("/data2/ruike/MultiTune/scripts/table_models/grid_result_0821_24.json")
-        f2 = open("/data2/ruike/MultiTune/scripts/table_models/grid_result_0821.json")
+        '''f1 = open("//MultiTune/scripts/table_models/grid_result_0821_24.json")
+        f2 = open("//MultiTune/scripts/table_models/grid_result_0821.json")
         config_perf_dict = {}
         res1 = json.load(f1)
         res2 = json.load(f2)
@@ -75,7 +75,7 @@ class TestDB(DB):
 
 
     def rf_inference(self, config):
-        f = open('/data2/ruike/MultiTune/knob_configs/mysql_new.json')
+        f = open('//MultiTune/knob_configs/mysql_new.json')
         knobs_dict = json.load(f)
         if 'time' in config.keys():
             del config['time']

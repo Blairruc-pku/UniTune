@@ -30,7 +30,7 @@ class CostEstimator():
         self.context_dir = {}
         #self.pca = PCA(n_components=10, svd_solver='full')
         self.pca = PCA(n_components=20)
-        self.current_context = None #tuple(np.load('/data2/ruike/MultiTune/best_im.npy', encoding='bytes', allow_pickle=True))
+        self.current_context = None #tuple(np.load('//MultiTune/best_im.npy', encoding='bytes', allow_pickle=True))
         self.scaler = MinMaxScaler()
         self.parser = self.init_parser()
         self.current_query_type = None
@@ -106,9 +106,9 @@ class CostEstimator():
 
         _y = np.array(_y)
         _X = np.vstack(_X)
-        '''if os.path.exists("/data2/ruike/query_rewrite/LearnedRewrite/X.npy"):
-            X_load = np.load("/data2/ruike/query_rewrite/LearnedRewrite/X.npy",  encoding='bytes', allow_pickle=True)
-            y_load = np.load("/data2/ruike/query_rewrite/LearnedRewrite/y.npy", encoding='bytes', allow_pickle=True)
+        '''if os.path.exists("//query_rewrite/LearnedRewrite/X.npy"):
+            X_load = np.load("//query_rewrite/LearnedRewrite/X.npy",  encoding='bytes', allow_pickle=True)
+            y_load = np.load("//query_rewrite/LearnedRewrite/y.npy", encoding='bytes', allow_pickle=True)
             X_dump = np.vstack((X_load, _X))
             y_dump = np.hstack((y_load, _y))
         else:
