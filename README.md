@@ -48,14 +48,14 @@ port = 3306
 user = root
 passwd =
 dbname = tpch
-sock = /data2/ruike/mysql/base/mysql.sock
-cnf = /data2/ruike/MultiTune/default.cnf
+sock = /mysql/base/mysql.sock
+cnf = /MultiTune/default.cnf
 
 # mysql related
-mysqld = /data2/ruike/mysql/mysqlInstall/bin/mysqld
+mysqld = mysql/mysqlInstall/bin/mysqld
 
 # knob related
-knob_config_file =  /data2/ruike/MultiTune/knob_configs/mysql_new.json
+knob_config_file =  /MultiTune/knob_configs/mysql_new.json
 knob_num = 50
 
 # workload name in ['TPCH', 'JOB']
@@ -63,14 +63,14 @@ workload_name = TPCH
 # workload execution time constraint in sec
 workload_timeout = 600
 # workload queries list
-workload_qlist_file = /data2/ruike/MultiTune/scripts/tpch_queries_list_0.txt
+workload_qlist_file = /MultiTune/scripts/tpch_queries_list_0.txt
 # workload queries directory
-workload_qdir = /data2/ruike/MultiTune/queries/tpch_queries_mysql_0/
+workload_qdir = /MultiTune/queries/tpch_queries_mysql_0/
 # workload run_scripts directory
-scripts_dir = /data2/ruike/MultiTune/scripts/
+scripts_dir = /MultiTune/scripts/
 # view generation dir
-q_mv_file = /data2/ruike/MultiTune/advisor/av_files/trainset/q_mv_list.txt
-mv_trainset_dir = /data2/ruike/MultiTune/advisor/av_files/trainset
+q_mv_file = /MultiTune/advisor/av_files/trainset/q_mv_list.txt
+mv_trainset_dir = /MultiTune/advisor/av_files/trainset
 
 ```
 * To specify the tuning setting ,please modify the following parameters:
