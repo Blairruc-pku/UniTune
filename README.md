@@ -40,7 +40,7 @@ Follow the instructions to load data:
 Please modify the user-specified parameters in `config.ini` before the experiments.
 
 * To specify the database connection information, please modify the following parameters:
-```ini
+```shell
 [database]
 dbtype = mysql
 host = 127.0.0.1
@@ -75,6 +75,7 @@ mv_trainset_dir = /MultiTune/advisor/av_files/trainset
 ```
 * To specify the tuning setting ,please modify the following parameters:
 ```shell
+[tuning]
 task_id = tpch_test
 components = {'knob': 'OtterTune', 'index':'DBA-Bandit', 'query':'LearnedRewrite'}
 tuning_budget = 108000
