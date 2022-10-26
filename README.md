@@ -50,14 +50,11 @@ passwd =
 dbname = tpch
 sock = /mysql/base/mysql.sock
 cnf = /MultiTune/default.cnf
-
 # mysql related
 mysqld = mysql/mysqlInstall/bin/mysqld
-
 # knob related
 knob_config_file =  /MultiTune/knob_configs/mysql_new.json
 knob_num = 50
-
 # workload name in ['TPCH', 'JOB']
 workload_name = TPCH
 # workload execution time constraint in sec
