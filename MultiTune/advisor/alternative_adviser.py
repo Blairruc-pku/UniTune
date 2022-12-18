@@ -74,7 +74,7 @@ class TopAdvisor(ABC):
         if not self.cost_aware:
             self.pull_arm_run = int(self.max_runs / self.block_runs)
         self.sliding_window_size = eval(args_tune['window_size'])
-        self.output_file = args_tune['output_file']
+        self.output_file = os.path.join('optimize_history', args_tune['task_id']+'.res' )#args_tune['output_file']
         self.budget = float(args_tune['index_budget'])
         # initialize
         self.default = defaultdict(dict)

@@ -430,7 +430,6 @@ class DB(ABC):
         return all_cost, space_cost
 
     def evaluate(self, config, collect_im=False):
-        return (np.random.random(), np.random.random()), 0, np.random.random(65)
         self.iteration += 1
 
         if isinstance(config, Configuration):
@@ -477,6 +476,7 @@ class DB(ABC):
         cmd, filename = self.generate_benchmark_cmd()
 
         self.logger.debug("Iteration {}: Benchmark start, saving results to {}!".format(self.iteration, filename))
+        self.logger.info(cmd)
         p_benchmark = subprocess.Popen(cmd, shell=True, stderr=subprocess.STDOUT, stdout=subprocess.PIPE,
                                        close_fds=True)
         self.logger.info(cmd)

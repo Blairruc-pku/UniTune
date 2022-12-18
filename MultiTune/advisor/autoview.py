@@ -119,7 +119,7 @@ class AutoView(RLEstimator):
     def reset_context(self, context):
         self.current_context = context.tolist()
 
-    def Suggest(self)
+    def Suggest(self):
         self.max_optimize_tim, self.max_opti_solution = evaluate_with_budget(
             time_budget=self.allocated_infer_time,
             max_opti_solution=self.max_opti_solution,
