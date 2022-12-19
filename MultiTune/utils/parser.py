@@ -1,5 +1,6 @@
 import pdb
 import sys
+import os
 import numpy as np
 import configparser
 from sqlparse.sql import Where, Comparison, Identifier, Parenthesis
@@ -64,6 +65,7 @@ def parse_args(config_file='config.ini'):
     config_dict = cf.get_dict()
     config_dict['tune']['components'] = eval(config_dict['tune']['components'])
     config_dict['tune']['arms'] = str(list(config_dict['tune']['components'].keys()))
+    config_dict['tune']['output_file'] = os.path.join('optimize_history', config_dict['tune']['task_id'] + '.res')
     return config_dict['database'], config_dict['tune']
 
 

@@ -430,6 +430,7 @@ class DB(ABC):
         return all_cost, space_cost
 
     def evaluate(self, config, collect_im=False):
+        #return(np.random.random(), np.random.random()), 0, np.random.random(65)
         self.iteration += 1
 
         if isinstance(config, Configuration):

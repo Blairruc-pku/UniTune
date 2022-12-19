@@ -74,7 +74,7 @@ class TopAdvisor(ABC):
         if not self.cost_aware:
             self.pull_arm_run = int(self.max_runs / self.block_runs)
         self.sliding_window_size = eval(args_tune['window_size'])
-        self.output_file = os.path.join('optimize_history', args_tune['task_id']+'.res' )#args_tune['output_file']
+        self.output_file = args_tune['output_file']
         self.budget = float(args_tune['index_budget'])
         # initialize
         self.default = defaultdict(dict)
@@ -606,9 +606,9 @@ class TopAdvisor(ABC):
                 self.best_result[arm]['context'] = Configuration(BOAdvisor.setup_config_space('index', db=self.db), config).get_array()
             elif arm == 'query':
                 config = self.best_result['knob']['config']
-                knob_config = self.best_result[arm]['context'] =  Configuration(BOAdvisor.setup_config_space(tune_knob=True, db=self.db), config).get_array()
+                knob_config = Configuration(BOAdvisor.setup_config_space('knob', db=self.db), config).get_array()
                 config = self.best_result['index']['config']
-                index_config =  Configuration(BOAdvisor.setup_config_space(tune_index=True, db=self.db), config).get_array()
+                index_config =  Configuration(BOAdvisor.setup_config_space('index', db=self.db), config).get_array()
                 self.best_result[arm]['context'] = np.hstack((knob_config, index_config))
 
         elif self.context_type == 'reinit':
