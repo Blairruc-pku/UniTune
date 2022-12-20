@@ -209,7 +209,7 @@ class CostEstimator():
 
 
     def evaluate(self, eval_dir, timestamp=None):
-        if timestamp == None:
+        if timestamp == None and not len(eval_dir.keys()) == 0:
             self.query_timestamp = int(time.time())
             self.record_rewrite_sql(eval_dir)
 

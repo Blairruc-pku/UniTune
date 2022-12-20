@@ -90,6 +90,7 @@ class LearnedRewrite(RLEstimator):
     def Suggest(self, i):
        suggest_result = self.rewrite_sql(i)
        self.add_rewrite_result(suggest_result, self.evaluatedL[self.estimator.current_context])
+       return suggest_result
 
     def UpdatePolicy(self, eval_dir):
         self.estimator.update_record(eval_dir)
