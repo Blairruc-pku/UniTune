@@ -62,7 +62,7 @@ class Rewriter():
             calcite_conn = conn.unwrap(CalciteConnection)
             root_schema = calcite_conn.getRootSchema()
             if db.dbtype == 'mysql':
-                data_source = JdbcSchema.dataSource("jdbc:mysql://localhost:{}/{}?useSSL=false".format(db.port, db.dbname),
+                data_source = JdbcSchema.dataSource("jdbc:mysql://127.0.0.1:{}/{}?useSSL=false&socket=/data2/ruike/mysql8/base/mysql.sock".format(db.port, db.dbname),
                                                 'com.mysql.jdbc.Driver', db.user, db.passwd)
             elif db.dbtype == 'postgres':
                 data_source = JdbcSchema.dataSource("jdbc:postgresql://" + db.host + ':' + str(db.port) + '/',
@@ -169,7 +169,14 @@ class Rewriter():
             # print(' rewritten sql '.center(60, '-'))
 
             sql = self.RA2SQL(ra)
-            success, res = self.db.validate_sql(str(sql))
+            from MultiTune.utils.limit import time_limit, TimeoutException
+            try:
+                with time_limit(5):
+                    success, res = self.db.validate_sql(str(sql))
+            except  Exception as e:
+                if isinstance(e, TimeoutException):
+                    self.db._clear_processlist()
+                    print("Timed out!")
             if success == 1:
                 return 1, str(sql)
             else:

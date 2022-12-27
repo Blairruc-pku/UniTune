@@ -110,8 +110,13 @@ class SqlParser:
         query = query.replace(", FALSE IS NULL DESC, FALSE DESC", "")
         query = query.replace(", FALSE IS NULL, FALSE", "")
         query = query.replace("FALSE IS NULL, FALSE,", "")
-
-        explain_format_fetchall = self.mysql_query("EXPLAIN FORMAT=JSON {};".format(query))
+        from MultiTune.utils.limit import time_limit, TimeoutException
+        try:
+            with time_limit(5):
+                explain_format_fetchall = self.mysql_query("EXPLAIN FORMAT=JSON {};".format(query))
+        except  Exception as e:
+            if isinstance(e, TimeoutException):
+                print("Timed out!")
         if not explain_format_fetchall:
             print("explain_format_fetchall is empty, query: {}".format(query))
             return np.array([0]*21)
@@ -161,7 +166,8 @@ class SqlParser:
             passwd=self.argus["password"],
             port=int(self.argus["port"]),
             connect_timeout=30,
-            charset='utf8')
+            charset='utf8',
+            unix_socket=self.argus["sock"])
         conn.select_db(self.argus["database"])
         return conn
 
