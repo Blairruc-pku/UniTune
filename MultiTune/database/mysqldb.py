@@ -53,7 +53,9 @@ class MysqlDB(DB):
                                 port= int(self.port),
                                 database=self.dbname,
                                 charset ="utf8",
-                                user= "root")
+                                user= "root",
+                                unix_socket=self.sock
+                                )
         return conn
 
     def _execute(self, sql):
@@ -329,12 +331,21 @@ class MysqlDB(DB):
 
     def estimate_query_cost(self, query):
         sql = "EXPLAIN FORMAT=JSON {}".format(query)
-        output = self._fetch_results(sql, json=False)
-        explain = json.loads(output[0][0])
-        if 'cost_info' in explain['query_block'].keys():
-            cost = float(explain['query_block']['cost_info']['query_cost'])
-        else:
+        try:
+            with time_limit(5):
+                output = self._fetch_results(sql, json=False)
+                explain = json.loads(output[0][0])
+                if 'cost_info' in explain['query_block'].keys():
+                    cost = float(explain['query_block']['cost_info']['query_cost'])
+                else:
+                    cost = 0
+        except Exception as e:
             cost = 0
+            if isinstance(e, TimeoutException):
+                self.logger.info("Timed out!")
+                self._clear_processlist()
+            else:
+                self.logger.info('{}: Exception when calling objective function: {}'.format(type, e))
 
         return cost
 

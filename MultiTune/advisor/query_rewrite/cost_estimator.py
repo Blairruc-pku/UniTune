@@ -65,6 +65,7 @@ class CostEstimator():
         argus["password"] = self.db.passwd
         argus["port"] = self.db.port
         argus["database"] = self.db.dbname
+        argus["sock"] = self.db.sock
         parser = SqlParser(argus)
         self.parser = parser
         return parser

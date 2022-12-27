@@ -63,11 +63,11 @@ class DB(ABC):
         self.queries = self.get_queries()
 
         # knob
+        self.mysql8 = eval(kwargs['mysql8'])
         self.knob_num = int(knob_num)
         self.knob_config_file = knob_config_file
         self.knob_details = self.get_knobs()
         self.restart_wait_time = restart_wait_time
-
         try:
             self._connect_db()
         except Exception as e:
@@ -293,7 +293,7 @@ class DB(ABC):
         if workload_qlist_file is None:
             workload_qlist_file = self.workload_qlist_file
             
-        if self.workload_name in ['tpch', 'job']:
+        if self.workload_name in ['tpch', 'job', 'tpcds']:
             script = os.path.join(self.scripts_dir, 'run_{}.sh'.format(self.dbtype))
             wl = {
                 'type': 'read',
@@ -317,7 +317,6 @@ class DB(ABC):
 
     def generate_candidates(self):
         all_used_columns = set()
-
         for i, sql in enumerate(self.queries):
 
             parser = sql_metadata.Parser(sql)
@@ -385,7 +384,7 @@ class DB(ABC):
         timestamp = int(time.time())
         filename = self.result_path + '/{}.log'.format(timestamp)
 
-        if self.workload_name in ['tpch', 'job']:
+        if self.workload_name in ['tpch', 'job', 'tpcds']:
             cmd = self.workload['cmd'].format(output=filename)
         else:
             raise ValueError('Invalid workload name')
@@ -428,6 +427,7 @@ class DB(ABC):
         space_cost = self.get_index_size()
 
         return all_cost, space_cost
+
 
     def evaluate(self, config, collect_im=False):
         #return(np.random.random(), np.random.random()), 0, np.random.random(65)
@@ -495,13 +495,14 @@ class DB(ABC):
             self.logger.debug("Iteration {}: Clear database processes!".format(self.iteration))
 
         # stop collecting internal metrics
-        im_result = np.zeros(65)
+
         if collect_im:
             self.set_im_alive(False)
             im.join()
 
             keys = list(internal_metrics[0].keys())
             keys.sort()
+            im_result = np.zeros(len(keys))
             for idx in range(len(keys)):
                 key = keys[idx]
                 data = [x[key] for x in internal_metrics]
@@ -511,7 +512,7 @@ class DB(ABC):
         time.sleep(1)
         space_cost = self.get_index_size()
 
-        if self.workload_name in ['tpch', 'job']:
+        if self.workload_name in ['tpch', 'job', 'tpcds']:
             dirname, _ = os.path.split(os.path.abspath(__file__))
             time_cost, lat_mean, time_cost_dir = parse_benchmark_result(filename, workload_qlist_file, self.workload_timeout)
             self.time_cost_dir = time_cost_dir
@@ -556,15 +557,24 @@ class DB(ABC):
         return internal_metrics
 
     def get_knobs(self):
+        if self.mysql8:
+            blacklist = ['query_cache_min_res_unit', 'query_cache_size']
+        else:
+            blacklist = []
+
         with open(self.knob_config_file, 'r') as f:
             knob_tmp = json.load(f)
             knobs = list(knob_tmp.keys())
 
         i = 0
+        count = 0
         knob_details = dict()
-        while i < self.knob_num:
+        while count < self.knob_num:
             key = knobs[i]
-            knob_details[key] = knob_tmp[key]
+            if not key in blacklist:
+                knob_details[key] = knob_tmp[key]
+                count = count + 1
+
             i = i + 1
 
         self.logger.info('Initialize {} Knobs'.format(len(knob_details.keys())))
