@@ -54,6 +54,7 @@ class MysqlDB(DB):
                                 database=self.dbname,
                                 charset ="utf8",
                                 user= "root",
+                                password = self.passwd,
                                 unix_socket=self.sock
                                 )
         return conn
@@ -102,7 +103,7 @@ class MysqlDB(DB):
 
     def _close_db(self):
         mysqladmin = os.path.dirname(self.mysqld) + '/mysqladmin'
-        kill_cmd = '{} -u{} -S {} shutdown'.format(mysqladmin, self.user, self.sock)
+        kill_cmd = '{} -u{} -S {} shutdown -p{}'.format(mysqladmin, self.user, self.sock, self.passwd)
         force_kill_cmd1 = "ps aux|grep '" + self.sock + "'|awk '{print $2}'|xargs kill -9"
         force_kill_cmd2 = "ps aux|grep '" + self.cnf + "'|awk '{print $2}'|xargs kill -9"
 
@@ -232,6 +233,13 @@ class MysqlDB(DB):
         mysqladmin = os.path.dirname(self.mysqld) + '/mysqladmin'
         clear_cmd = mysqladmin + ' processlist -uroot -S ' + self.sock + """ | awk '$2 ~ /^[0-9]/ {print "KILL "$2";"}' | mysql -uroot -S """ + self.sock
         subprocess.Popen(clear_cmd, shell=True, stderr=subprocess.STDOUT, stdout=subprocess.PIPE, close_fds=True)
+        res = self._fetch_results("select id from information_schema.processlist where user='root';")
+        for id in res:
+            id = id[0]
+            try:
+                self._execute("Kill " + str(id))
+            except:
+                continue
 
     def reset_index(self, advisor_only=True, advisor_prefix='advisor'):
         all_indexes_dict = self.get_all_indexes(advisor_only, advisor_prefix)
@@ -401,8 +409,8 @@ class MysqlDB(DB):
                 cur.execute('explain FORMAT=JSON '+sql)
             except Exception as e:
                 fail = 1
-                print(e)
-                print(sql+'\n')
+                #print(e)
+                #print(sql+'\n')
             res = []
             if fail == 0:
                 res = cur.fetchall()

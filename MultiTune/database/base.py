@@ -7,8 +7,10 @@ import logging
 import threading
 import numpy as np
 import sqlparse
+import threading
 import sql_metadata
 import subprocess
+import gevent
 import csv
 import multiprocessing as mp
 from abc import ABC, abstractmethod
@@ -80,9 +82,9 @@ class DB(ABC):
         self.get_all_index_sizes()
         self.pre_combine_log_file_size = float(self.get_varialble_value("innodb_log_file_size")) * float(self.get_varialble_value("innodb_log_files_in_group"))
 
-        # self.reset_index()
-        # self.reset_knob()
-        #self.reset_all()
+        self.reset_index()
+        self.reset_knob()
+        self.reset_all()
 
         # internal metrics collect signal
         self.im_alive_init()
@@ -223,9 +225,39 @@ class DB(ABC):
         try:
             index_config = strip_config(index_config)
         except:
+
             pass
         current_indexes_dict = self.get_all_indexes(advisor_only=True)
         current_indexes = current_indexes_dict.keys()
+        self.logger.debug('Index Config: {}'.format(index_config))
+        if  self.mysql8:
+            threadsL = []
+            recordL = []
+            advise_prefix = 'advisor'
+            for tab_col, v in index_config.items():
+                if v == 'on' and tab_col not in current_indexes:
+                    table, column = tab_col.split('.')
+                    name = '%s_%s' % (advise_prefix, column)
+                    sql = "CREATE INDEX %s ON %s (%s);" % (name, table, column)
+                    threadsL.append(threading.Thread( target=self._execute,args=(sql,) ))
+                    recordL.append(sql)
+
+                if v == 'off' and tab_col in current_indexes:
+                    table, column = tab_col.split('.')
+                    name = current_indexes_dict[tab_col]
+                    sql = "ALTER TABLE %s DROP INDEX %s;" % (table, name)
+                    threadsL.append(threading.Thread(target=self._execute, args=(sql,)))
+
+            self.logger.debug(recordL)
+            for t in threadsL:
+                t.start()
+            for t in threadsL:
+                t.join()
+            self._analyze_table()
+            self.logger.debug("Iteration {}: Index Configuration Applied!".format(self.iteration))
+            self.logger.debug('Index Config: {}'.format(index_config))
+
+            return
 
         for tab_col, v in index_config.items():
             if v == 'on' and tab_col not in current_indexes:
@@ -239,7 +271,6 @@ class DB(ABC):
 
         self._analyze_table()
         self.logger.debug("Iteration {}: Index Configuration Applied!".format(self.iteration))
-        self.logger.debug('Index Config: {}'.format(index_config))
 
 
     def apply_view_config(self,  view_config):
@@ -316,6 +347,14 @@ class DB(ABC):
         return queries
 
     def generate_candidates(self):
+        if self.mysql8:
+            with open('/tmp/indexsize.json') as f:
+                config = json.load(f)
+                result = list(config.keys())
+                result.sort()
+                self.logger.info('Initialize {} Indexes'.format(len(result)))
+                return result
+
         all_used_columns = set()
         for i, sql in enumerate(self.queries):
 
@@ -378,6 +417,7 @@ class DB(ABC):
 
         result.sort()
         self.logger.info('Initialize {} Indexes'.format(len(result)))
+        print(result)
         return result
 
     def generate_benchmark_cmd(self):
@@ -429,7 +469,7 @@ class DB(ABC):
         return all_cost, space_cost
 
 
-    def evaluate(self, config, collect_im=False):
+    def evaluate(self, config, collect_im=True):
         #return(np.random.random(), np.random.random()), 0, np.random.random(65)
         self.iteration += 1
 
@@ -495,18 +535,18 @@ class DB(ABC):
             self.logger.debug("Iteration {}: Clear database processes!".format(self.iteration))
 
         # stop collecting internal metrics
-
-        if collect_im:
-            self.set_im_alive(False)
-            im.join()
-
-            keys = list(internal_metrics[0].keys())
-            keys.sort()
-            im_result = np.zeros(len(keys))
-            for idx in range(len(keys)):
-                key = keys[idx]
-                data = [x[key] for x in internal_metrics]
-                im_result[idx] = float(sum(data)) / len(data)
+        im_result = []
+        # if collect_im:
+        #     self.set_im_alive(False)
+        #     im.join()
+        #
+        #     keys = list(internal_metrics[0].keys())
+        #     keys.sort()
+        #     im_result = np.zeros(len(keys))
+        #     for idx in range(len(keys)):
+        #         key = keys[idx]
+        #         data = [x[key] for x in internal_metrics]
+        #         im_result[idx] = float(sum(data)) / len(data)
 
         # get costs
         time.sleep(1)
