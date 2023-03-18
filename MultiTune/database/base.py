@@ -505,7 +505,7 @@ class DB(ABC):
 
         self.apply_index_config(index_config)
 
-        # collect internal metrics
+        # # collect internal metrics
         internal_metrics = Manager().list()
         im = mp.Process(target=self.get_internal_metrics, args=(internal_metrics, self.workload_timeout, 0))
         self.set_im_alive(True)
@@ -536,17 +536,17 @@ class DB(ABC):
 
         # stop collecting internal metrics
         im_result = []
-        # if collect_im:
-        #     self.set_im_alive(False)
-        #     im.join()
-        #
-        #     keys = list(internal_metrics[0].keys())
-        #     keys.sort()
-        #     im_result = np.zeros(len(keys))
-        #     for idx in range(len(keys)):
-        #         key = keys[idx]
-        #         data = [x[key] for x in internal_metrics]
-        #         im_result[idx] = float(sum(data)) / len(data)
+        if collect_im:
+            self.set_im_alive(False)
+            im.join()
+
+            keys = list(internal_metrics[0].keys())
+            keys.sort()
+            im_result = np.zeros(len(keys))
+            for idx in range(len(keys)):
+                key = keys[idx]
+                data = [x[key] for x in internal_metrics]
+                im_result[idx] = float(sum(data)) / len(data)
 
         # get costs
         time.sleep(1)
