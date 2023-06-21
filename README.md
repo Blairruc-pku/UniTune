@@ -1,4 +1,4 @@
-# MultiTune
+# UniTune
 
 This is the source code to the paper "A Unified and Efficient Coordinating Framework  for Autonomous DBMS Tuning". Please refer to the paper for the experimental details.
 
